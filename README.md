@@ -28,7 +28,7 @@ In this project, I am using BRFSS 2023 survey data from CDC : https://www.cdc.go
 
 The data code book at : https://www.cdc.gov/brfss/annual_data/2023/zip/codebook23_llcp-v2-508.zip  
 
-[code book](data/codebook23_llcp-v2-508/ )
+[data](data)
 
 The CSV format of BRFSS 2023 Survey data is obtained from : https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset
 
