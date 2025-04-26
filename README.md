@@ -69,9 +69,7 @@ The results will be applied, such as aiding healthcare providers in early diagno
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Link to notebook 1](diabetes_risk.ipynb)
 
 
 ##### Contact and Further Information
