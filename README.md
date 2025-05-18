@@ -1,8 +1,7 @@
 ###  **Project Title: Diabetes Risk Indications**
 
-**Author**
-Jitendra Prasad
-Date 05/17/2025
+**Author** Jitendra Prasad  
+**Date** 05/17/2025  
 
 ### Executive summary
 **Project overview and goals:** To enable early intervention and potential prevention of diabetes, the aim is to develop a machine learning model that accurately identifies individuals at high risk by analyzing their medical history, lifestyle factors, and other relevant data.
