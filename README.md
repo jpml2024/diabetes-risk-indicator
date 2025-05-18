@@ -2,15 +2,31 @@
 
 **Author**
 Jitendra Prasad
-Date 04/24/2025
+Date 05/17/2025
 
-#### Executive summary
-To enable early intervention and potential prevention of diabetes, the aim is to develop a machine learning model that accurately identifies individuals at high risk by analyzing their medical history, lifestyle factors, and other relevant data.
+### Executive summary
+**Project overview and goals:** To enable early intervention and potential prevention of diabetes, the aim is to develop a machine learning model that accurately identifies individuals at high risk by analyzing their medical history, lifestyle factors, and other relevant data.
 
 The ML model goal is to predict if an individual is at a risk of diabetes  or not.
 
-#### Rationale
+**Findings:** Logistic regression with C= 0.1 regularization seems to be the WINNER here with 70% Test accuracy and best Recall, F1 and AUC scores. Also Confusion matrix has least False Negative which is important for medical risk. Missing a disease i.e higher false negative can have severe consequences.
+
+* **Model results:**
+
+![](images/result-table.png)
+
+* **Confusion Matrix:**
+
+![](images/confusion-matrix.png)
+
+### Rationale
 In this century, Diabetes is one of the silent killer lifestyle disease impacting millions of population worldwide. A diabetic person's blood sugar regulation system stops being effective resulting in high level of sugar in bloodstream. This high level of blood sugar over the time clinically associated with several life complications like, heart disease, obesity, high blood pressure, kidney failures etc.
+
+According to the International Diabetes Federation (IDF) Diabetes Atlas 2025, 11.1% of the adult population (20-79 years) worldwide is living with diabetes. This means that approximately 1 in 9 adults in this age group has diabetes.
+
+Here are some additional details refrenced from: https://idf.org/about-diabetes/diabetes-facts-figures/
+
+![](images/idf_diabetes_data_2024.png)
 
 Daibetes is incurable but early sign or detection of it can help manage the future risk with certain lifestyle changes like healthy eating, reducing weight, being active and with proper education about the diseaes and regular medical checkups.
 
@@ -39,7 +55,9 @@ The dataset originally has
 
 *   **Total Features ( Columns):** 350
 
-**Since github limits teh size of file upload, the original data has been trimmed to 15% **
+**Since github limits the size of file upload, the original data has been trimmed to 15% **
+
+*  ** Reduced file :** BRFSS2023_R.csv
 
 *   **Total response ( samples):** 64998
 
@@ -65,6 +83,22 @@ In order to build an accurate predictive model, I plan to explore following tech
 #### Results
 The output of the model to predict the target value binary classification if an individual is high risk or diabetes or not. The model should also indicate which feature puts the individual at high risk of diabetes i.e the feature that correlates most with target class.
 
+* **Permutation Importance**
+* Positive Perumtation: Feature is important
+* Negative Permutation: Feature is not important or weakly important
+
+![](images/permutation-importance.png)
+
+* **Important features that significantly relates to diabetes risk are:**
+1. Genhlth -- General health of an individual
+2. bmi -- Body mass index
+3. diffwalk -- Having diffculty walking
+4. exercise -- Physical activit or exercise
+5. race -- Race
+6. pa_activity -- What is the level of physical activity
+7. Heart_desease -- Ever had coronary heart disease (CHD) or myocardial infarction (MI)
+8. smoke100 -- Smoker
+
 
 #### Next steps
 The results will be applied, such as aiding healthcare providers in early diagnosis or tailoring interventions for high-risk individuals.
@@ -74,4 +108,3 @@ The results will be applied, such as aiding healthcare providers in early diagno
 - [Link to notebook 1](diabetes_risk.ipynb)
 
 
-##### Contact and Further Information
